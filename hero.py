@@ -10,7 +10,7 @@ class Hero(Attacker):
         self._name=name
 
     def attack(self,target):
-        target._healh = target._heath - self._attack
+        target._health = target._health - self._attack
 
 #FIXME:
 """В этом файле должен быть описан класс героя, унаследованный от Attacker
