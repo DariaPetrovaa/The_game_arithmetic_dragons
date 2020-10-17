@@ -22,9 +22,11 @@ def game_tournament(hero, dragon_list):
 
             if dragon.check_answer(answer):
                 hero.attack(dragon)
+                hero._experience += 10
                 print('Верно! \n** дракон кричит от боли **')
             else:
                 dragon.attack(hero)
+                hero._experience -= 15
                 print('Ошибка! \n** вам нанесён удар... **')
         if dragon.is_alive():
             break
